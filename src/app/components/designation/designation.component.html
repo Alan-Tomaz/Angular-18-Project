@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-12">
+        @if (isLoader == true) {
+        <div class="spinner-border text-primary"></div>
+        }
+    </div>
+    @for (designation of designationList; track $index) {
+    <div class="col-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{designation.designation}}</h4>
+                <a href="#" class="card-link">Edit</a>
+                <a href="#" class="card-link">Delet</a>
+            </div>
+        </div>
+    </div>
+    }
+</div>
